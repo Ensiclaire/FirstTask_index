@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefins Sans', sans-serif;
+}
+
+body {
+    font-family: 'Josefins Sans', sans-serif;
+    font-size: 16px;
+    background-color: gainsboro;
+}
+
+
+
+    /* INI NAVIGASI */
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    position: fixed;
+    background-color: darkslategray;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: 'Josefins Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: flex;
+    line-height: 25px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0;
+    border-bottom: 3px solid whitesmoke;
+    position: absolute;
+    transition: .3s;
+}
+
+.nav-link:hover.nav-link::after {
+    width: 35px;
+}
+
+
+
+    /* INI LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.logo h2{
+    font-family: 'Josefins Sans', sans-serif;
+    margin-left: 10px;
+    color: white;
+}
+
+.logo img{
+    width: 50px;
+}
+
+
+
+    /* INI HOME */
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url("../IMG/kafilah-background.jpg");
+    background-position-y: 50%;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    padding-left: 80px;
+}
+
+.home h1 {
+    font-family: 'Josefins Sans', sans-serif;
+    color: white;
+    font-size: 65px;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-family: 'Josefins Sans', sans-serif;
+    color: white;
+    font-size: 45px;
+}
+
+.home a {
+    font-family: 'Josefins Sans', sans-serif;
+    color: white;
+    width: 100px;
+    font-weight: 700px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: darkslategray;
+}
+
+
+    /* INI PROJECT */
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
+}
+
+.project h2 {
+    font-size: 50px;
+    padding: 70px 0 20px;
+}
+
+
+
+    /* CARDS */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 10px #666;
+}
+
+.card-header img {
+    height: 210px;
+    width: 300px;
+}
+
+.card-header hr {
+    width: 85%;
+    margin: 10px auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+.card-body h3 {
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+.card-body>a {
+    color: white;
+    width: 30%;
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: darkslategray;
+}
+
+.card-links {
+    margin: 30px 0;
+}
+
+.card-links ul {
+    list-style: none;
+}
+.card-links a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+
+
+    /* INI EVENT */
+.event {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+}
+
+.event h2 {
+    align-self: center;
+    font-size: 50px;
+    padding: 70px 0 20px;
+}
+
+.bg-event {
+    display: flex;
+    background-color: darkslategray;
+    height: 260px;
+}
+
+
+.event-left,
+.event-right {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.event-left {
+    background: url(../IMG/kafilah1.jpg);
+    background-position-y: -70px;
+    background-size: cover;
+}
+
+.event-right {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-right h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.event-right a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+    /* INI FOOTER */
+footer {
+    text-align: center;
+    font-family: 'Josefins Sans', sans-serif;
+    color: black;
+}
